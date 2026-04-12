@@ -19,27 +19,30 @@ return (
     objectFit="cover"
     mb={4}
     />
-    <Text>Meal type: {recipe.mealType.join(", ")}</Text>
-    <Text>Dish type: {recipe.dishType.join(", ")}</Text>
-    <Text>Total cooking time: {recipe.totalTime > 0 ? recipe.totalTime : "N/A"}</Text>
-    {recipe.dietLabels.length > 0 && (<Text>Diet Labels: {recipe.dietLabels.join(", ")}</Text>
+    <Heading size="md" mb={3}>Recipe details</Heading>
+    <Text mb={2}>Meal type: {recipe.mealType.join(", ")}</Text>
+    <Text mb={2}>Dish type: {recipe.dishType.join(", ")}</Text>
+    <Text mb={2}>Total cooking time: {recipe.totalTime > 0 ? recipe.totalTime : "N/A"}</Text>
+
+
+    <Heading size="md" mb={3}>Labels</Heading>
+    <Text mb={2}>Health Labels: {recipe.healthLabels.join(", ")}</Text>
+    {recipe.dietLabels.length > 0 && (<Text mb={2}>Diet Labels: {recipe.dietLabels.join(", ")}</Text>
     )}
-    <Text>Health Labels: {recipe.healthLabels.join(", ")}</Text>
     {recipe.cautions.length > 0 && (
-    <Text>Cautions: {recipe.cautions.join(", ")}</Text>)}
-    <Text>Ingredients: {recipe.ingredientLines.join(", ")}</Text>
-    <Text>Servings: {recipe.yield}</Text>
-    <Text>Energy: {Math.round(recipe.totalNutrients.ENERC_KCAL.quantity)} kcal</Text>
-    <Text>Protein: {Math.round(recipe.totalNutrients.PROCNT.quantity)} g</Text>
-    <Text>Fat: {Math.round(recipe.totalNutrients.FAT.quantity)} g</Text>
-    <Text>Carbs: {Math.round(recipe.totalNutrients.CHOCDF.quantity)} g</Text>
-    <Text>Cholesterol: {Math.round(recipe.totalNutrients.CHOLE.quantity)} mg</Text>
-    <Text>Sodium: {Math.round(recipe.totalNutrients.NA.quantity)} mg</Text>
+    <Text mb={2}>Cautions: {recipe.cautions.join(", ")}</Text>)}
+
+    <Heading size="md" mb={3}>Ingredients</Heading>
+    <Text mb={4}>Ingredients: {recipe.ingredientLines.join(", ")}</Text>
+
+    <Heading size="md" mb={3}>Nutrition</Heading>
+    <Text mb={2}>Servings: {recipe.yield}</Text>
+    <Text mb={2}>Energy: {Math.round(recipe.totalNutrients.ENERC_KCAL.quantity)} kcal</Text>
+    <Text mb={2}>Protein: {Math.round(recipe.totalNutrients.PROCNT.quantity)} g</Text>
+    <Text mb={2}>Fat: {Math.round(recipe.totalNutrients.FAT.quantity)} g</Text>
+    <Text mb={2}>Carbs: {Math.round(recipe.totalNutrients.CHOCDF.quantity)} g</Text>
+    <Text mb={2}>Cholesterol: {Math.round(recipe.totalNutrients.CHOLE.quantity)} mg</Text>
+    <Text mb={2}>Sodium: {Math.round(recipe.totalNutrients.NA.quantity)} mg</Text>
 </Box>
 );
 };
-<<<<<<< HEAD
-    
-=======
-    
->>>>>>> f9e297bea3be80f7ee5ab6727ff0fc1f6d2ef13a
