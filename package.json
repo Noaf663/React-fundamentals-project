@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@babel/core": "^7.29.0",
     "@babel/types": "^7.29.0",
     "@chakra-ui/react": "^3.26.0",
@@ -17,18 +18,33 @@
     "next-themes": "^0.4.6",
     "react": "^19.2.5",
     "react-dom": "^19.2.5",
+=======
+    "@chakra-ui/react": "^3.26.0",
+    "@emotion/react": "^11.14.0",
+    "next-themes": "^0.4.6",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+>>>>>>> f9e297bea3be80f7ee5ab6727ff0fc1f6d2ef13a
     "react-icons": "^5.5.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.30.1",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
+<<<<<<< HEAD
     "@vitejs/plugin-react": "^6.0.1",
+=======
+    "@vitejs/plugin-react": "^4.5.2",
+>>>>>>> f9e297bea3be80f7ee5ab6727ff0fc1f6d2ef13a
     "eslint": "^9.30.1",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
     "globals": "^16.3.0",
+<<<<<<< HEAD
     "vite": "^8.0.8"
+=======
+    "vite": "^7.0.0"
+>>>>>>> f9e297bea3be80f7ee5ab6727ff0fc1f6d2ef13a
   }
 }
